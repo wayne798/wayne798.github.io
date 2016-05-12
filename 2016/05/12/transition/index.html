@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>test | 良子的个人博客</title>
+    <title>iOS 传值 7种方式 | 良子的个人博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="wayne">
     
 
     
-    <meta name="description">
+    <meta name="description" content="1. &amp;#x5C5E;&amp;#x6027;&amp;#x4F20;&amp;#x503C;2. &amp;#x65B9;&amp;#x6CD5;&amp;#x4F20;&amp;#x503C;3. delegate&amp;#x56DE;&amp;#x8C03;4. block5. NSNotification&amp;#x901A;&amp;#x77E5;6. &amp;#x5355;&amp;#x4F8B;7. &amp;#x6570;&amp;#x636E;&amp;#x5171;&amp;#x4EAB;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://wayne798.github.com/2016/05/11/test/index.html">
+<meta property="og:title" content="iOS 传值 7种方式">
+<meta property="og:url" content="http://wayne798.github.com/2016/05/12/transition/index.html">
 <meta property="og:site_name" content="良子的个人博客">
-<meta property="og:description">
-<meta property="og:updated_time" content="2016-05-11T07:01:08.000Z">
+<meta property="og:description" content="1. &amp;#x5C5E;&amp;#x6027;&amp;#x4F20;&amp;#x503C;2. &amp;#x65B9;&amp;#x6CD5;&amp;#x4F20;&amp;#x503C;3. delegate&amp;#x56DE;&amp;#x8C03;4. block5. NSNotification&amp;#x901A;&amp;#x77E5;6. &amp;#x5355;&amp;#x4F8B;7. &amp;#x6570;&amp;#x636E;&amp;#x5171;&amp;#x4EAB;">
+<meta property="og:updated_time" content="2016-05-12T02:14:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description">
+<meta name="twitter:title" content="iOS 传值 7种方式">
+<meta name="twitter:description" content="1. &amp;#x5C5E;&amp;#x6027;&amp;#x4F20;&amp;#x503C;2. &amp;#x65B9;&amp;#x6CD5;&amp;#x4F20;&amp;#x503C;3. delegate&amp;#x56DE;&amp;#x8C03;4. block5. NSNotification&amp;#x901A;&amp;#x77E5;6. &amp;#x5355;&amp;#x4F8B;7. &amp;#x6570;&amp;#x636E;&amp;#x5171;&amp;#x4EAB;">
 
     
     <link rel="alternative" href="/atom.xml" title="良子的个人博客" type="application/atom+xml">
@@ -76,14 +76,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/05/11/test/" title="test" itemprop="url">test</a>
+      <a href="/2016/05/12/transition/" title="iOS 传值 7种方式" itemprop="url">iOS 传值 7种方式</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="wayne" target="_blank" itemprop="author">wayne</a>
 		
   <p class="article-time">
-    <time datetime="2016-05-11T07:00:23.000Z" itemprop="datePublished"> 发表于 2016-05-11 15:00</time>
+    <time datetime="2016-05-12T01:59:36.000Z" itemprop="datePublished"> 发表于 2016-05-12 09:59</time>
     
   </p>
 </header>
@@ -92,11 +92,11 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-属性传值"><span class="toc-number">1.</span> <span class="toc-text">1. 属性传值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-方法传值"><span class="toc-number">2.</span> <span class="toc-text">2. 方法传值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-delegate回调"><span class="toc-number">3.</span> <span class="toc-text">3. delegate回调</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-block"><span class="toc-number">4.</span> <span class="toc-text">4. block</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-NSNotification通知"><span class="toc-number">5.</span> <span class="toc-text">5. NSNotification通知</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-单例"><span class="toc-number">6.</span> <span class="toc-text">6. 单例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-数据共享"><span class="toc-number">7.</span> <span class="toc-text">7. 数据共享</span></a></li></ol>
 		
 		</div>
 		
-		  
+		<h4 id="1-&#x5C5E;&#x6027;&#x4F20;&#x503C;"><a href="#1-&#x5C5E;&#x6027;&#x4F20;&#x503C;" class="headerlink" title="1. &#x5C5E;&#x6027;&#x4F20;&#x503C;"></a>1. &#x5C5E;&#x6027;&#x4F20;&#x503C;</h4><h4 id="2-&#x65B9;&#x6CD5;&#x4F20;&#x503C;"><a href="#2-&#x65B9;&#x6CD5;&#x4F20;&#x503C;" class="headerlink" title="2. &#x65B9;&#x6CD5;&#x4F20;&#x503C;"></a>2. &#x65B9;&#x6CD5;&#x4F20;&#x503C;</h4><h4 id="3-delegate&#x56DE;&#x8C03;"><a href="#3-delegate&#x56DE;&#x8C03;" class="headerlink" title="3. delegate&#x56DE;&#x8C03;"></a>3. delegate&#x56DE;&#x8C03;</h4><h4 id="4-block"><a href="#4-block" class="headerlink" title="4. block"></a>4. block</h4><h4 id="5-NSNotification&#x901A;&#x77E5;"><a href="#5-NSNotification&#x901A;&#x77E5;" class="headerlink" title="5. NSNotification&#x901A;&#x77E5;"></a>5. NSNotification&#x901A;&#x77E5;</h4><h4 id="6-&#x5355;&#x4F8B;"><a href="#6-&#x5355;&#x4F8B;" class="headerlink" title="6. &#x5355;&#x4F8B;"></a>6. &#x5355;&#x4F8B;</h4><h4 id="7-&#x6570;&#x636E;&#x5171;&#x4EAB;"><a href="#7-&#x6570;&#x636E;&#x5171;&#x4EAB;" class="headerlink" title="7. &#x6570;&#x636E;&#x5171;&#x4EAB;"></a>7. &#x6570;&#x636E;&#x5171;&#x4EAB;</h4>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -113,7 +113,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://wayne798.github.com/2016/05/11/test/" data-title="test | 良子的个人博客" data-tsina="null" class="share clearfix">
+	  <div data-url="http://wayne798.github.com/2016/05/12/transition/" data-title="iOS 传值 7种方式 | 良子的个人博客" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -126,19 +126,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/05/12/predicate/" title="iOS中正则表达式">
-  <strong>上一篇：</strong><br/>
-  <span>
-  iOS中正则表达式</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/05/11/hello-world/"  title="Hello World">
+<a href="/2016/05/12/predicate/"  title="iOS中正则表达式">
  <strong>下一篇：</strong><br/> 
- <span>Hello World
+ <span>iOS中正则表达式
 </span>
 </a>
 </div>
@@ -147,7 +139,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2016/05/11/test/" data-title="test" data-url="http://wayne798.github.com/2016/05/11/test/"></div>
+	<div class="ds-thread" data-thread-key="2016/05/12/transition/" data-title="iOS 传值 7种方式" data-url="http://wayne798.github.com/2016/05/12/transition/"></div>
 </section>
 
 
@@ -157,7 +149,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-属性传值"><span class="toc-number">1.</span> <span class="toc-text">1. 属性传值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-方法传值"><span class="toc-number">2.</span> <span class="toc-text">2. 方法传值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-delegate回调"><span class="toc-number">3.</span> <span class="toc-text">3. delegate回调</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-block"><span class="toc-number">4.</span> <span class="toc-text">4. block</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-NSNotification通知"><span class="toc-number">5.</span> <span class="toc-text">5. NSNotification通知</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-单例"><span class="toc-number">6.</span> <span class="toc-text">6. 单例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-数据共享"><span class="toc-number">7.</span> <span class="toc-text">7. 数据共享</span></a></li></ol>
  
   </div>
 
